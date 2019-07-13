@@ -12,7 +12,7 @@ export default {
     const $spinner = $("<div class='spinner tiny'></div>");
     $container.html($spinner);
 
-    loadScript("/plugins/discourse-graphviz/javascripts/viz-1.8.2.js").then(
+    loadScript("/plugins/discourse-graphviz/javascripts/viz-2.1.2.js").then(
       () => {
         $container.removeClass("is-loading");
 
