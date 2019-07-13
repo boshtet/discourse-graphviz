@@ -15,7 +15,7 @@ after_initialize do
   DiscourseEvent.on(:before_post_process_cooked) do |doc, post|
     if SiteSetting.discourse_graphviz_enabled
       context = MiniRacer::Context.new
-      context.load("#{Rails.root}/plugins/discourse-graphviz/public/javascripts/viz-1.8.2.js")
+      context.load("#{Rails.root}/plugins/discourse-graphviz/public/javascripts/viz-2.1.2.js")
 
       doc.css('div.graphviz').each do |graph|
         engine = graph.attribute('data-engine').value
